@@ -1,11 +1,27 @@
 /* Settings Modal by DevilBro [edited] */
-:root {
-	--settingsmodalbackground: transparent;
-	--settingsmodalwidth: calc(100% - 50%/2);
-	--settingsmodalheight: calc(100% - 50%/4);
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 {
+    border: var(--border-width) solid var(--border-color) !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5::before {
+    background: linear-gradient(var(--drag-gradient1), var(--drag-gradient2));
+    display: block;
+    content: "";
+    top: var(--border-width);
+    min-height: 32px;
+    width: 100%;
+    border-bottom: var(--border-width) solid var(--border-color);
+    border-top-left-radius: calc(var(--round-corners) - 3.5px);
+    border-top-right-radius: calc(var(--round-corners) - 3.5px);
+    -webkit-app-region: drag;
 }
 
-#app-mount .baseLayer-W6S8cY {
+:root {
+	--settingswidth_v: 100vh;
+	--settingsheight_v: 85vh;
+	--settingsbackground_v: transparent;
+}
+
+#app-mount .baseLayer_d4b6c5 {
 	opacity: 1 !important;
 	transform: unset !important;
 	will-change: unset !important;
@@ -14,7 +30,7 @@
 	transition-property: inherit !important;
 	animation: inherit !important;
 }
-#app-mount .layer-86YKbF.stop-animations:first-child::after {
+#app-mount .layer_d4b6c5.stop-animations:first-child::after {
 	content: "" !important;
 	position: fixed !important;
 	background: rgb(0, 0, 0) !important;
@@ -24,153 +40,157 @@
 	left: 0 !important;
 	margin: 0 !important;
 	padding: 0 !important;
-	opacity: 0.3 !important;
+	opacity: 0.45 !important;
 	z-index: 999 !important;
+	pointer-events: none !important;
 }
 
-#app-mount .layer-86YKbF ~ .layer-86YKbF {
-	position: fixed !important;
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 {
+	position: absolute !important;
 	top: 0 !important;
 	right: 0 !important;
 	bottom: 0 !important;
 	left: 0 !important;
-	background: var(--settingsmodalbackground) !important;
-	border-radius: 5px !important;
+	background: var(--settingsbackground_v) !important;
+	border-radius: var(--round-corners) !important;
 	box-shadow: var(--elevation-high) !important;
-	width: var(--settingsmodalwidth) !important;
-	height: var(--settingsmodalheight) !important;
+	width: var(--settingswidth_v) !important;
+	height: var(--settingsheight_v) !important;
 	margin: auto !important;
 	padding: 0 !important;
 	overflow: hidden !important;
 	contain: unset !important;
 	z-index: 1000 !important;
+	--settingsiconsadditionalsize: var(--use-settingsicons, 0) * (var(--settingsicons-size, 0px) + var(--settingsicons-gap, 0px));
 }
-
-#app-mount .layer-86YKbF ~ .layer-86YKbF > div:first {
-    display: contents;
-}
-
-#app-mount .layer-86YKbF ~ .layer-86YKbF > div,
-#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j {
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 > div,
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .standardSidebarView_c25c6d {
 	position: static !important;
 	width: 100% !important;
-	height: -webkit-fill-available !important;
-	padding: unset !important;
-	overflow: hidden !important;
-}
-
-.premiumTab-39eQzY .selectedBackground-1t6xXq {
-    border-radius: 4px;
-}
-
-#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-nqHbhN {
-	padding: 20px !important;
-}
-#app-mount .layer-86YKbF ~ .layer-86YKbF .contentColumnDefault-3eyv5o {
-	padding: 20px 40px !important;
-}
-#app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-3K3Z4C {
-	height: var(--settingsmodalheight) !important;
-}
-#app-mount .layer-86YKbF ~ .layer-86YKbF .repoHeader-2KfNvH {
-	max-width: calc(var(--settingsmodalwidth) - 256px) !important;;
-}
-#app-mount .layer-86YKbF ~ .layer-86YKbF .standardSidebarView-E9Pc3j .editor {
-	height: calc(100vh - 300px) !important;
-}
-
-#app-mount .root-2zfUH6 {
-	position: fixed !important;
-	top: 0 !important;
-	right: 0 !important;
-	bottom: 0 !important;
-	left: 0 !important;
-	background: var(--settingsmodalbackground) !important;
-	border-radius: 5px !important;
-	box-shadow: var(--elevation-high) !important;
-	width: var(--settingsmodalwidth) !important;
-	height: var(--settingsmodalheight) !important;
-	margin: auto !important;
-	padding: 0 !important;
-	overflow: hidden !important;
-	contain: unset !important;
-	z-index: 1000 !important;
-}
-#app-mount .root-2zfUH6.enterDone-menWZ8 {
-	transform: unset !important;
-}
-#app-mount .perksModal-CLcR1c {
-	position: static !important;
-	width: 100% !important;
-	height: -webkit-fill-available !important;
+	height: 100% !important;
 	margin: unset !important;
 	padding: unset !important;
+	overflow: hidden !important;
 }
-#app-mount .perksModalContentWrapper-3RHugb {
-	padding: 10px 0 10px !important;
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebarRegion_c25c6d,
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebarRegionScroller_c25c6d {
+	flex: 0 0 auto !important;
 }
-#app-mount .root-2zfUH6 .perksModal-CLcR1c .carousel-3dvee9 {
-	margin-left: calc(-0.5 * (100vw - var(--settingsmodalwidth))) !important;
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_c25c6d {
+	width: 218px !important;
+	padding: 20px 6px 20px 20px !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .contentColumnDefault_c25c6d,
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .contentColumnWide_c25c6d {
+	padding: 20px 40px !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .wrapper_e5cdf3 {
+	width: calc(var(--settingswidth_v) - 420px - var(--settingsiconsadditionalsize)) !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .repo_k8F4Sd {
+	max-width: calc(var(--settingswidth_v) - 226px - var(--settingsiconsadditionalsize)) !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .repoHeader_2KfNvH {
+	padding-bottom: 0 !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .repoHeader_2KfNvH .tabBar_b9fccc {
+	gap: 30px !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .repoHeader_2KfNvH .quickSelectLabel__79774 {
+	font-size: 12px !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .repoScroller_9JnAPs {
+	padding-top: 0 !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_e87574 {
+	height: var(--settingsheight_v) !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .standardSidebarView_c25c6d .editor {
+	height: calc(var(--settingsheight_v) - 120px) !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .toolsContainer_c25c6d,
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .toolsContainer_c25c6d .tools_c25c6d,
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .toolsContainer_c25c6d .container_df5532,
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .toolsContainer_c25c6d .closeButton_df5532 {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: var(--round-corners) !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .toolsContainer_c25c6d {
+	position: fixed !important;
+	top: 22px !important;
+	z-index: -1 !important;
+}
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .settingsToolbar_wu4yfQ {
+	display: none !important;
 }
 
-#app-mount .closeButton-PCZcma {
-    background-color: var(--close-color);
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border: none;
-}
-#app-mount .closeButton-PCZcma:hover {
-    transform: scale(1.14);
-    transform-origin: center;
-}
-.closeButton-PCZcma svg,
-.keybind-13vtq8 {
-    visibility: hidden;
-}
-.root-2zfUH6.enterDone-menWZ8 .closeContent-1uXQiy,
-.root-2zfUH6.enterDone-menWZ8 .closeWrapper-1aVqeP {
-    margin-top: 14px;
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .accountProfileCard_b69b77 {
+	max-width: calc(var(--settingswidth_v) - 332px - var(--settingsiconsadditionalsize)) !important;
 }
 
-.standardSidebarView-E9Pc3j {
-    border: var(--border-width) solid var(--border-color);
-    border-bottom-left-radius: var(--round-corners);
-    border-bottom-right-radius: var(--round-corners);
-    margin-top: calc(32px + var(--border-width)) !important;
-}
-.standardSidebarView-E9Pc3j::before {
-    background: linear-gradient(var(--drag-gradient1), var(--drag-gradient2));
-    position: absolute !important;
-    content: "";
-    left: 0;
-    top: 0;
-    height: 32px !important;
-    border-top-left-radius: var(--round-corners);
-    border-top-right-radius: var(--round-corners);
-    width: calc(100% - var(--border-width)*2);
-    border: var(--border-width) solid var(--border-color);
-    border-bottom: none;
-    -webkit-app-region: drag;
+#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .guildsSection__337a8 {
+	max-width: calc(var(--settingswidth_v) - 352px - var(--settingsiconsadditionalsize)) !important;
 }
 
-#app-mount .perksModal-CLcR1c {
-    border: var(--border-width) solid var(--border-color);
-    border-bottom-left-radius: var(--round-corners);
-    border-bottom-right-radius: var(--round-corners);
-    margin-top: calc(32px + var(--border-width)) !important;
+#app-mount .root_f906dd {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: var(--settingsbackground_v) !important;
+	border-radius: var(--round-corners) !important;
+	box-shadow: var(--elevation-high) !important;
+	width: var(--settingswidth_v) !important;
+	height: var(--settingsheight_v) !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
 }
-.perksModal-CLcR1c::before {
-    background: linear-gradient(var(--drag-gradient1), var(--drag-gradient2));
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    height: 32px;
-    border-top-left-radius: var(--round-corners);
-    border-top-right-radius: var(--round-corners);
-    width: calc(100% - var(--border-width)*2);
-    border: var(--border-width) solid var(--border-color);
-    border-bottom: none;
-    -webkit-app-region: drag;
+#app-mount .root_f906dd.enterDone_f906dd {
+	transform: unset !important;
+}
+#app-mount .root_f906dd .closeIconWrapper_a50853,
+#app-mount .root_f906dd .closeIconWrapper_a50853 .container_df5532,
+#app-mount .root_f906dd .closeIconWrapper_a50853 .closeButton_df5532,
+#app-mount .shop_e77fa3 .container_df5532,
+#app-mount .shop_e77fa3 .closeButton_df5532 {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	z-index: -1 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: var(--round-corners) !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+	animation: unset !important;
+	transition: unset !important;
+}
+#app-mount .root_f906dd .closeIconWrapper_a50853 {
+	top: 22px !important;
 }

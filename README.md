@@ -1,6 +1,6 @@
 ## Moon Rabbits Dream About Virtual
 
-### [Version 3!!!](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/releases)
+### [Version 4!!!](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/releases)
 
 A theme based on the art cover from Tsukino Mito Album Moon Rabbits Dream About Virtual!
 
@@ -14,16 +14,18 @@ Theme by [zuzumi](https://github.com/zuzumi-f)
 ## Preview
 
 ### Dark Mode
-![image](https://user-images.githubusercontent.com/79029257/192064735-ba03305c-dd27-461a-9c5d-b23e035f1eb1.png)
-![image](https://user-images.githubusercontent.com/79029257/192064751-1da11ae5-6141-47d7-b04d-f54b374cf261.png)
-## New Bg Image
-![image](https://user-images.githubusercontent.com/79029257/224162016-7d1bf1b8-3a2b-407f-b725-168d1572ed00.png)
+![image](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/assets/79029257/77f3e5eb-e0aa-457e-a1cd-46a1910dc8d3)
+![image](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/assets/79029257/93f76a2b-835d-40bf-9ac3-60446d0301cb)
+
+## With Bg Image
+![image](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/assets/79029257/0df2525a-95a1-4cc7-8701-c8105c70e101)
 
 ### Light Mode
-![image](https://user-images.githubusercontent.com/79029257/192064806-4b6f9f29-470f-46ca-b90f-69dc68b5b641.png)
-![image](https://user-images.githubusercontent.com/79029257/192064830-07c989c1-58bf-4fd3-9731-1d7277bfe36a.png)
-## New Bg Image
-![image](https://user-images.githubusercontent.com/79029257/224162143-64b25a1b-a8d9-4f86-9fc1-882cda375987.png)
+![image](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/assets/79029257/1fb9ae8e-125b-4322-beb2-d660b11927a3)
+![image](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/assets/79029257/19afd1e1-369d-4748-b678-38474762c4b8)
+
+## With Bg Image
+![image](https://github.com/zuzumi-f/Moon-Rabbits-Dream-About-Virtual/assets/79029257/eeeb1277-d139-44db-8089-4efc3d61cc5f)
 
 ## Original Art Cover
 [![moonrabbitsdreamaboutvirtual2-art-scale-2_00x-gigapixel](https://user-images.githubusercontent.com/79029257/132885766-58a204cf-4941-4143-a3d2-7d9eec948c2c.png)](https://youtu.be/5rvzyCed6Bo)
